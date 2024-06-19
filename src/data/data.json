@@ -1,34 +1,36 @@
 [
   {
     "id": "1",
-    "productName": "Laptop 1",
-    "price": 2236,
-    "rating": 4.7,
-    "discount": 63,
+    "name": "Laptop 1",
+    "image": "/assets/laptop1.jpeg",
+    "company": "AMZ",
+    "category": "Laptop",
+    "price": 1000,
+    "rating": 4.5,
+    "discount": 10,
     "availability": "yes"
   },
   {
     "id": "2",
-    "productName": "Laptop 13",
-    "price": 1244,
-    "rating": 4.5,
-    "discount": 45,
-    "availability": "out-of-stock"
+    "name": "Phone 1",
+    "image": "/assets/phone1.jpeg",
+    "company": "FLP",
+    "category": "Phone",
+    "price": 500,
+    "rating": 4.0,
+    "discount": 20,
+    "availability": "no"
   },
   {
     "id": "3",
-    "productName": "Laptop 3",
-    "price": 9102,
-    "rating": 4.44,
-    "discount": 98,
-    "availability": "out-of-stock"
-  },
-  {
-    "id": "4",
-    "productName": "Laptop 11",
-    "price": 2652,
-    "rating": 4.12,
-    "discount": 70,
+    "name": "TV 1",
+    "image": "/assets/tv1.jpeg",
+    "company": "SNP",
+    "category": "TV",
+    "price": 1500,
+    "rating": 4.7,
+    "discount": 15,
     "availability": "yes"
   }
 ]
+  
