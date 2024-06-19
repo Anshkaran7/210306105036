@@ -23,6 +23,7 @@ const Home: React.FC = () => {
   const [maxPrice, setMaxPrice] = useState<number>(10000)
   const [top, setTop] = useState<number>(10)
 
+  // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4Nzc5OTYyLCJpYXQiOjE3MTg3Nzk2NjIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ3Yjc1NmI1LTkyNGYtNDU2YS04NGEyLTU4YzI0ZjQ5ZDM5MyIsInN1YiI6ImthcmFuQGFiYy5lZHUifSwiY29tcGFueU5hbWUiOiJnb01hcnQiLCJjbGllbnRJRCI6ImQ3Yjc1NmI1LTkyNGYtNDU2YS04NGEyLTU4YzI0ZjQ5ZDM5MyIsImNsaWVudFNlY3JldCI6ImNZUXlKY1lldGFKWXJmZkkiLCJvd25lck5hbWUiOiJSYWh1bCIsIm93bmVyRW1haWwiOiJrYXJhbkBhYmMuZWR1Iiwicm9sbE5vIjoiMSJ9.UG23kjfPtPRxOpase3mPQHUMZ6U8qwaWLvbCJ536Z4Y"
   useEffect(() => {
       // const fetchProducts = async () => {
       //   try {
