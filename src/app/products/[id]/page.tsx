@@ -1,6 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 interface Product {
     id: string
@@ -11,6 +12,7 @@ interface Product {
     availability: string
     company: string
     category: string
+    image: string
 }
 
 const productsData: Product[] = [
@@ -22,7 +24,8 @@ const productsData: Product[] = [
         price: 2236,
         rating: 4.7,
         discount: 63,
-        availability: 'yes'
+        availability: 'yes',
+        image: '/assets/laptop1.jpeg'
     },
     {
         id: '2',
@@ -32,7 +35,8 @@ const productsData: Product[] = [
         price: 1244,
         rating: 4.5,
         discount: 45,
-        availability: 'out-of-stock'
+        availability: 'out-of-stock',
+        image: '/assets/laptop2.jpg'
     },
     {
         id: '3',
@@ -42,7 +46,8 @@ const productsData: Product[] = [
         price: 9102,
         rating: 4.44,
         discount: 98,
-        availability: 'out-of-stock'
+        availability: 'out-of-stock',
+        image: '/assets/laptop3.jpg'
     },
     {
         id: '4',
@@ -52,7 +57,8 @@ const productsData: Product[] = [
         price: 2652,
         rating: 4.12,
         discount: 70,
-        availability: 'yes'
+        availability: 'yes',
+        image: '/assets/laptop4.jpg'
     }
 ]
 
@@ -76,7 +82,10 @@ const ProductPage = () => {
         <div className="container mx-auto p-8 bg-white shadow-md rounded-lg">
             <h1 className="text-4xl font-bold mb-6 text-gray-800">{product.productName}</h1>
             <div className="flex flex-col lg:flex-row items-start text-black lg:items-center">
-                <div className="flex-1">
+                <div className="flex-1 mb-6 lg:mb-0">
+                    <Image src={product.image} alt={product.productName} width={500} height={500} className="rounded-lg shadow-md" />
+                </div>
+                <div className="flex-1 lg:ml-6">
                     <p className="text-lg mb-2"><span className="font-semibold">Company:</span> {product.company}</p>
                     <p className="text-lg mb-2"><span className="font-semibold">Category:</span> {product.category}</p>
                     <p className="text-lg mb-2"><span className="font-semibold">Price:</span> ${product.price}</p>
